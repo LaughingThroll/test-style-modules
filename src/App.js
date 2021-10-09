@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './Style.module.scss'
 
-function App() {
+export  const  App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // DON'T WORK BECAUSE JAVASCRIPT DON'T UNDERSTAND "-" in variables  
+    // <div className={style.hello-world}>Hello</div>
+    // It's good work 
+    // <div className={style["hello-world"]}>Hello</div>
+    // <div className={style.helloWorld}>Hello</div>
+    // <div className={style.hello_world}>Hello</div>
+    null
+    )
 }
-
-export default App;
